@@ -1,0 +1,83 @@
+#header {
+    background-color: #444444!important;
+}
+
+.header_bg {
+    background-color: #444444!important;
+}
+
+.avia-menu-text {
+    font-size: 14px;
+}
+.avia-menu-text:hover {
+    color:#d35400!important;
+}
+
+.main_color .avia-color-theme-color {
+    background-color: #d35400!important;
+    
+}
+#top .main_color .avia-color-theme-color {
+    background-color: #d35400!important;
+}
+
+.avia_iconbox_title {
+    color: #ffffff;
+}
+
+.main_color input[type='submit'] {
+    background-color: #d35400!important;
+}
+.main_color input[type='submit']:hover {
+    background-color: #444444!important;
+}
+
+.av-special-heading-tag {
+    color: #d35400!important;
+}
+
+.hr-inner {
+    border-color: #d35400!important;
+}
+
+#scroll-top-link {
+    background-color: #d35400!important;
+    border-color: #d35400!important;
+}
+
+#scroll-top-link:hover {
+    background-color: #444444!important;
+    border-color: #444444!important;
+}
+
+.inner_tooltip strong {
+    color: #d35400!important;
+}
+
+.av-image-hotspot_inner {
+    background-color: #d35400!important;
+}
+
+.main_color a {
+    color: #d35400!important;
+}
+
+.widgettitle {
+    color: #d35400!important;
+}
+
+#avia_socialcount-3 {
+    margin-left: 10px!important;
+}
+
+#text-4 h3 {
+    margin-left: 20px;
+}
+
+.social-list {
+    display: flex;
+}
+
+.social-list img {
+    margin-left: 10px;
+}
