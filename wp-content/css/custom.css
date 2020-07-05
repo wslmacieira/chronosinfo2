@@ -82,6 +82,10 @@
     display: flex;
 }
 
+.social-list ul {
+    margin-left: -10px;
+}
+
 .social-list img {
     margin-left: 10px;
 }
@@ -140,5 +144,16 @@
     input[type='submit'] {
         width: 100%;
     }
+
+    #avia_socialcount-3 {
+        margin-left: 0!important;
+    }
     
+    #text-4 h3 {
+        margin-left: 0px;
+    }
+    
+    .social-list li:first-child {
+        margin-left: -10px;
+    }
   }
