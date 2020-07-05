@@ -29,6 +29,10 @@
     color: #ffffff;
 }
 
+.av-rotator-container-inner span {
+    color: #d35400!important;
+}
+
 .main_color input[type='submit'] {
     background-color: #d35400!important;
 }
