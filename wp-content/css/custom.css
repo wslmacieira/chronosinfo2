@@ -136,5 +136,9 @@
     .elementor-column-wrap {
         margin-bottom: 100px;
     }
+
+    input[type='submit'] {
+        width: 100%;
+    }
     
   }
