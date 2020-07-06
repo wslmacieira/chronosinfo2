@@ -17,6 +17,10 @@
     background-color: #444444!important;
 }
 
+#wrap_all .av-burger-overlay #av-burger-menu-ul li a {
+    border-color: #d35400!important;
+}
+
 .main_color .avia-color-theme-color {
     background-color: #d35400!important;
     
@@ -165,11 +169,17 @@
         margin-left: -10px;
     }
 
-    .whatsapp  {
-       border-radius: 50%!important;
-    }
     .whatsapp span {
        display: none;
+    }
+
+    .whatsapp { 
+        width: 40px!important; 
+        height: 40px!important;
+        border-radius: 50%!important;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
     }
 
     .social_bookmarks_whatsapp a::before, .av-social-link-whatsapp a::before {
@@ -180,8 +190,9 @@
   }
 
   .whatsapp {
+    text-decoration: none;
     background-color:#25D366;
-    border-radius: 50px;
+    border-radius: 25px;
     position: fixed;
     top: 82%;
     right: 1%;
