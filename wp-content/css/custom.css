@@ -14,7 +14,7 @@
 }
 
 .av-burger-overlay-inner {
-    background-color: #d35400!important;
+    background-color: #444444!important;
 }
 
 .main_color .avia-color-theme-color {
@@ -30,7 +30,7 @@
 }
 
 .av-rotator-container-inner span {
-    color: #d35400!important;
+    color: #444444!important;
 }
 
 .main_color input[type='submit'] {
@@ -71,6 +71,10 @@
 }
 
 .widgettitle {
+    color: #d35400!important;
+}
+
+.menu-footer li a:hover {
     color: #d35400!important;
 }
 
@@ -160,4 +164,41 @@
     .social-list li:first-child {
         margin-left: -10px;
     }
+
+    .whatsapp  {
+       border-radius: 50%!important;
+    }
+    .whatsapp span {
+       display: none;
+    }
+
+    .social_bookmarks_whatsapp a::before, .av-social-link-whatsapp a::before {
+
+        margin-right: 0px!important;
+
+        }
   }
+
+  .whatsapp {
+    background-color:#25D366;
+    border-radius: 50px;
+    position: fixed;
+    top: 82%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+}
+  .whatsapp a:hover {
+    text-decoration: none;
+    color: #d35400!important;
+}
+
+#scroll-top-link{
+    top: 72%;
+}
+
+.social_bookmarks_whatsapp a::before, .av-social-link-whatsapp a::before {
+    font-family: 'entypo-fontello';
+    content:"\e854";
+    margin-right: 10px;
+    }
