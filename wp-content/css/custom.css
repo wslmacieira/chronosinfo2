@@ -188,6 +188,11 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
+    .footer-copyright{
+        background-color: #404449!important;
+        box-shadow: 0px -3px 10px 0px rgba(0,0,0,0);
+        padding-right: 0px!important;  
+    }
   
     .services-list {
         flex-direction: column;
@@ -241,7 +246,7 @@ body {
     background-color:#25D366;
     border-radius: 25px;
     position: fixed;
-    top: 82%;
+    top: 92%;
     right: 1%;
     padding: 10px;
     z-index: 10000000;
@@ -252,13 +257,23 @@ body {
 }
 
 #scroll-top-link{
-    top: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80%;
+    border-radius: 50%!important;
+    font-size: 28px;
 }
 
 .social_bookmarks_whatsapp a::before, .av-social-link-whatsapp a::before {
     font-family: 'entypo-fontello';
     content:"\e854";
+    font-size: 16px;
     margin-right: 10px;
+    }
+
+    #footer {
+        z-index: initial!important;
     }
 
     .footer_color {
@@ -267,8 +282,12 @@ body {
     }
 
     .footer-copyright{
+        box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.2);
+        padding-right: 150px!important;  
+    }
+
+    .socket_color {
         background-color: #404449!important;
-        box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.3);
     }
 
     .av_section_functions {
@@ -317,4 +336,21 @@ body {
         .av_section_functions-reverse {
             flex-direction: column-reverse;
         }
-        
+
+        .av_one_fifth {
+            margin-left: 20px!important;
+            width: 16%!important;
+        }
+        .av_one_fifth h3 {
+            font-size: 14px;
+        }
+        .av_one_fifth li {
+            font-size: 12px;
+        }
+        .av_one_fifth a img {
+            width: 20px;
+        }
+
+    }
+
+   
