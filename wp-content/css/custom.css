@@ -289,7 +289,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 50px 30px; 
+        padding: 50px 10px; 
     }
 
     .av_section_functions div h2 {
@@ -302,7 +302,7 @@ body {
 
     .av_section_functions-reverse {
         display: flex;
-        padding: 50px 30px; 
+        padding: 50px 10px; 
         justify-content: center;
         align-items: center;
         flex-direction: row-reverse;
