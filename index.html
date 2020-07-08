@@ -1,485 +1,713 @@
 <!DOCTYPE html>
 <html lang="pt-BR"
-	class="html_stretched responsive av-preloader-active av-preloader-enabled av-default-lightbox  
-html_header_top html_logo_left html_main_nav_header html_menu_right html_large html_header_sticky html_header_shrinking html_header_transparency
-html_mobile_menu_tablet html_header_searchicon html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled 
-html_minimal_header html_av-overlay-side html_av-overlay-side-classic html_av-submenu-noclone html_entry_id_431 av-no-preview html_text_menu_active ">
+    class="html_stretched responsive av-preloader-active av-preloader-enabled av-default-lightbox  html_header_top html_logo_left html_main_nav_header html_menu_right html_custom html_header_sticky html_header_shrinking_disabled html_mobile_menu_tablet html_header_searchicon_disabled html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_minimal_header html_av-submenu-hidden html_av-submenu-display-click html_av-overlay-side html_av-overlay-side-minimal html_16 html_av-submenu-noclone html_entry_id_431 av-cookies-no-cookie-consent av-no-preview html_text_menu_active ">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta name="robots" content="index, follow" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow" />
 
-	<title>Chronosinfo &#8211; Just another site</title>
-	<link rel='dns-prefetch' href='https://s.w.org/' />
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="wp-content/css/custom.css">
-	<link rel='stylesheet' id='avia-merged-styles-css' href='wp-content/css/chronosinfo-styles.css' type='text/css'
-		media='all' />
-	<link rel="icon" href="/favicon.png" type="image/png">
 
-	<script type='text/javascript' src='wp-content/js/jquery/jquery.js'></script>
-	<script type='text/javascript' src='wp-content/js/chronosinfo-head-scripts.js'></script>
+    <!-- mobile setting -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script
-		type="text/javascript">'use strict'; var avia_is_mobile = !1; if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && 'ontouchstart' in document.documentElement) { avia_is_mobile = !0; document.documentElement.className += ' avia_mobile ' }
-			else { document.documentElement.className += ' avia_desktop ' }; document.documentElement.className += ' js_active '; (function () { var e = ['-webkit-', '-moz-', '-ms-', ''], n = ''; for (var t in e) { if (e[t] + 'transform' in document.documentElement.style) { document.documentElement.className += ' avia_transform '; n = e[t] + 'transform' }; if (e[t] + 'perspective' in document.documentElement.style) document.documentElement.className += ' avia_transform3d ' }; if (typeof document.getElementsByClassName == 'function' && typeof document.documentElement.getBoundingClientRect == 'function' && avia_is_mobile == !1) { if (n && window.innerHeight > 0) { setTimeout(function () { var e = 0, o = {}, a = 0, t = document.getElementsByClassName('av-parallax'), i = window.pageYOffset || document.documentElement.scrollTop; for (e = 0; e < t.length; e++) { t[e].style.top = '0px'; o = t[e].getBoundingClientRect(); a = Math.ceil((window.innerHeight + i - o.top) * 0.3); t[e].style[n] = 'translate(0px, ' + a + 'px)'; t[e].style.top = 'auto'; t[e].className += ' enabled-parallax ' } }, 50) } } })();</script>
-	<style type='text/css'>
-		@font-face {
-			font-family: 'entypo-fontello';
-			font-weight: normal;
-			font-style: normal;
-			src: url('wp-content/assets/fonts/entypo-fontello.eot');
-			src: url('wp-content/assets/fonts/entypo-fontello.eot%3F') format('embedded-opentype'),
-				url('wp-content/assets/fonts/entypo-fontello.woff') format('woff'),
-				url('wp-content/assets/fonts/entypo-fontello.ttf') format('truetype'),
-				url('wp-content/assets/fonts/entypo-fontello.svg') format('svg');
-		}
+    <!-- Scripts/CSS and wp_head hook -->
+    <title>chronosinfo &#8211; Sistemas & Soluções</title>
 
-		#top .avia-font-entypo-fontello,
-		body .avia-font-entypo-fontello,
-		html body [data-av_iconfont='entypo-fontello']:before {
-			font-family: 'entypo-fontello';
-		}
-	</style>
+    <link rel='stylesheet' id='megamenu-css' href='/wp-content/css/maxmegamenu-style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='avia-merged-styles-css' href='/wp-content/css/chronosinfo-styles.min.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="wp-content/css/dashicons.min.css" media="all">
+    <link rel="stylesheet" href="wp-content/css/custom.css" media="all">
+    <link rel="canonical" href="http://chronosinfo/" />
+    <link rel='shortlink' href='http://chronosinfo/' />
+
+    <script type='text/javascript' src='wp-content/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+
+    <style type='text/css' media='screen'>
+        #top #header_main>.container,
+        #top #header_main>.container .main_menu .av-main-nav>li>a,
+        #top #header_main #menu-item-shop .cart_dropdown_link {
+            height: 80px;
+            line-height: 80px;
+        }
+
+        .html_top_nav_header .av-logo-container {
+            height: 80px;
+        }
+
+        .html_header_top.html_header_sticky #top #wrap_all #main {
+            padding-top: 78px;
+        }
+    </style>
+
+    <!-- To speed up the rendering and to display the site as fast as possible to the user we include some styles and scripts for above the fold content inline -->
+    <script type="text/javascript">'use strict'; var avia_is_mobile = !1; if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && 'ontouchstart' in document.documentElement) { avia_is_mobile = !0; document.documentElement.className += ' avia_mobile ' }
+        else { document.documentElement.className += ' avia_desktop ' }; document.documentElement.className += ' js_active '; (function () { var e = ['-webkit-', '-moz-', '-ms-', ''], n = ''; for (var t in e) { if (e[t] + 'transform' in document.documentElement.style) { document.documentElement.className += ' avia_transform '; n = e[t] + 'transform' }; if (e[t] + 'perspective' in document.documentElement.style) document.documentElement.className += ' avia_transform3d ' }; if (typeof document.getElementsByClassName == 'function' && typeof document.documentElement.getBoundingClientRect == 'function' && avia_is_mobile == !1) { if (n && window.innerHeight > 0) { setTimeout(function () { var e = 0, o = {}, a = 0, t = document.getElementsByClassName('av-parallax'), i = window.pageYOffset || document.documentElement.scrollTop; for (e = 0; e < t.length; e++) { t[e].style.top = '0px'; o = t[e].getBoundingClientRect(); a = Math.ceil((window.innerHeight + i - o.top) * 0.3); t[e].style[n] = 'translate(0px, ' + a + 'px)'; t[e].style.top = 'auto'; t[e].className += ' enabled-parallax ' } }, 50) } } })();
+    </script>
+
+    <style type="text/css" id="wp-custom-css">
+        img.segmento_card_image {
+            padding: 0;
+            border: solid 6px;
+            border-color: gray;
+            border-radius: 50%;
+            margin-top: -60px;
+            margin-bottom: 40px
+        }
+
+        .av-hamburger-inner {
+            display: none;
+        }
+    </style>
+
+    <style type='text/css'>
+        @font-face {
+            font-family: 'entypo-fontello';
+            font-weight: normal;
+            font-style: normal;
+            font-display: auto;
+            src: url('/wp-content/assets/fonts/entypo-fontello.eot');
+            src: url('/wp-content/assets/fonts/entypo-fontello.eot?#iefix') format('embedded-opentype'),
+                url('/wp-content/assets/fonts/entypo-fontello.woff') format('woff'),
+                url('/wp-content/assets/fonts/entypo-fontello.woff2') format('woff2'),
+                url('/wp-content/assets/fonts/entypo-fontello.ttf') format('truetype'),
+                url('/wp-content/assets/fonts/entypo-fontello.svg#entypo-fontello') format('svg');
+        }
+
+        #top .avia-font-entypo-fontello,
+        body .avia-font-entypo-fontello,
+        html body [data-av_iconfont='entypo-fontello']:before {
+            font-family: 'entypo-fontello';
+        }
+    </style>
+
 </head>
 
-<body data-rsssl=1 id="top" class="home page-template-default page page-id-431  rtl_columns stretched lato"
-	itemscope="itemscope" itemtype="https://schema.org/WebPage">
-	<div class='av-siteloader-wrap av-transition-enabled'>
-		<div class='av-siteloader-inner'>
-			<div class='av-siteloader-cell'>
-				<div class='av-siteloader'>
-					<div class='av-siteloader-extra'></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id='wrap_all'>
+<body id="top"
+    class="home page-template-default page page-id-431 logged-in  rtl_columns stretched open_sans mega-menu-avia elementor-default"
+    itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
-		<header id='header'
-			class='all_colors header_color light_bg_color  av_header_top av_logo_left av_main_nav_header av_menu_right av_large av_header_sticky av_header_shrinking av_header_stretch_disabled av_mobile_menu_tablet av_header_transparency av_header_searchicon av_header_unstick_top_disabled av_minimal_header av_bottom_nav_disabled  av_header_border_disabled'
-			role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
-			<div id='header_main' class='container_wrap container_wrap_logo'>
-				<div class='container av-logo-container'>
-					<div class='inner-container'><span class='logo'><a href='index.html'><img height='100' width='300'
-									src='wp-content/assets/images/logo.png'
-									alt='Chronosinfo' /></a></span>
-						<nav class='main_menu' data-selectname='Select a page' role="navigation" itemscope="itemscope"
-							itemtype="https://schema.org/SiteNavigationElement">
-							<div class="avia-menu av-main-nav-wrap">
-								<ul id="avia-menu" class="menu av-main-nav">
-									<li id="menu-item-434"
-										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-431 current_page_item menu-item-top-level menu-item-top-level-1">
-										<a href="#" itemprop="url"><span class="avia-bullet"></span><span
-												class="avia-menu-text menu-active">Chronosinfo</span><span
-												class="avia-menu-fx"><span class="avia-arrow-wrap"><span
-														class="avia-arrow"></span></span></span></a></li>
-									<li id="menu-item-437"
-										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-2">
-										<a href="#" itemprop="url"><span class="avia-bullet"></span><span
-												class="avia-menu-text">Funcionabilidades</span><span
-												class="avia-menu-fx"><span class="avia-arrow-wrap"><span
-														class="avia-arrow"></span></span></span></a></li>
-									<li id="menu-item-438"
-										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-3">
-										<a href="#" itemprop="url">
-											<span class="avia-bullet"></span>
-											<span class="avia-menu-text">Soluções</span><span class="avia-menu-fx"><span
-													class="avia-arrow-wrap"><span
-														class="avia-arrow"></span></span></span>
-										</a>
-									</li>
+    <div class='av-siteloader-wrap av-transition-enabled'>
+        <div class='av-siteloader-inner'>
+            <div class='av-siteloader-cell'>
+                <div class='av-siteloader'>
+                    <div class='av-siteloader-extra'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='wrap_all'>
 
-									<li class="av-burger-menu-main menu-item-avia-special av-small-burger-icon">
-										<a href="#">
-											<span class="av-hamburger av-hamburger--spin av-js-hamburger">
-												<span class="av-hamburger-box">
-													<span class="av-hamburger-inner"></span>
-													<strong>Menu</strong>
-												</span>
-											</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</nav>
-					</div>
-				</div>
-			</div>
+        <header id='header'
+            class='all_colors header_color light_bg_color  av_header_top av_logo_left av_main_nav_header av_menu_right av_custom av_header_sticky av_header_shrinking_disabled av_header_stretch_disabled av_mobile_menu_tablet av_header_searchicon_disabled av_header_unstick_top_disabled av_minimal_header av_bottom_nav_disabled  av_header_border_disabled'
+            role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
 
-			<div class='header_bg'></div>
+            <div id='header_main' class='container_wrap container_wrap_logo'>
 
-		</header>
-
-		<div id='main' class='all_colors' data-scroll-offset='116'>
-
-			<div id='av_section_1'
-				class='avia-section main_color avia-section-default avia-no-border-styling av-section-color-overlay-active avia-bg-style-scroll  avia-builder-el-0  el_before_av_section  avia-builder-el-first   av-minimum-height av-minimum-height-100 av-section-with-video-bg container_wrap fullsize'
-				style='background-image: url("wp-content/assets/images/pocket-watch-1637396_1920.png"); background-size: cover; background-repeat: no-repeat; '
-				data-section-video-ratio='16:9'>
-				<div data-size='featured' data-lightbox_size='large' data-animation='slide' data-conditional_play=''
-					data-ids='' data-video_counter='1' data-autoplay='false' data-bg_slider='false' data-slide_height=''
-					data-handle='' data-interval='5' data-class=' av-section-video-bg' data-css_id=''
-					data-scroll_down='' data-control_layout='' data-custom_markup='' data-perma_caption=''
-					data-autoplay_stopper='' data-image_attachment='' data-min_height='0px'
-					data-default-height='28.6666666667'
-					class='avia-slideshow avia-slideshow-1  av-default-height-applied avia-slideshow-featured   av-section-video-bg avia-slide-slider '
-					itemprop="ImageObject" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
-				</div>
-
-				<div class='av-section-color-overlay-wrap'>
-					<div class='av-section-color-overlay' style='opacity: 0.8; background-color: #95a5a6; '></div><a
-						href='index.html#next-section' title='' class='scroll-down-link ' aria-hidden='true'
-						data-av_icon='' data-av_iconfont='entypo-fontello'></a>
-					<div class='container'>
-						<main role="main" itemprop="mainContentOfPage"
-							class='template-page content  av-content-full alpha units'>
-							<div class='post-entry post-entry-type-page post-entry-431'>
-								<div class='entry-content-wrapper clearfix'>
-									<div
-										class="flex_column av_three_fourth  flex_column_div first  avia-builder-el-1  el_before_av_one_fourth  avia-builder-el-first  ">
-										<div style='text-align:left; color:#ffffff; font-size:63px; margin:0 0 0 0; '
-											class='av-rotator-container av-rotation-container-left   avia-builder-el-2  el_before_av_hr  avia-builder-el-first '
-											data-interval='3' data-animation='1'>
-											<h2 class='av-rotator-container-inner '>TUDO SOBRE SISTEMAS! OFERECEMOS
-												SOLUÇÕES<span class='av-rotator-text av-rotator-multiline-on '>
-													<span
-														class='av-rotator-text-single av-rotator-text-single-1'>SISTEMAS</span>
-													<span
-														class='av-rotator-text-single av-rotator-text-single-4'>E-COMMERCE</span>
-													<span class='av-rotator-text-single av-rotator-text-single-2'>GESTÃO
-														FINANCEIRA</span>
-													<span
-														class='av-rotator-text-single av-rotator-text-single-3'>SUPORTE
-														24/7</span>
-												</span></h2>
-										</div>
-										<div style=' margin-top:40px; margin-bottom:40px;'
-											class='hr hr-custom hr-left hr-icon-no   avia-builder-el-3  el_after_av_headline_rotator  avia-builder-el-last '>
-											<span class='hr-inner   inner-border-av-border-fat'
-												style=' width:50px; border-color:#ffffff;'><span
-													class='hr-inner-style'></span></span></div>
-
-
-
-									</div>
-									<div
-										class="flex_column av_one_fourth  flex_column_div   avia-builder-el-4  el_after_av_three_fourth  avia-builder-el-last  ">
-										<div style='height:50px'
-											class='hr hr-invisible   avia-builder-el-5  el_before_av_font_icon  avia-builder-el-first '>
-											<span class='hr-inner '><span class='hr-inner-style'></span></span></div>
-									</div>
-								</div>
-							</div>
-						</main>
-					</div>
-				</div>
-			</div>
-
-			<div id='av_section_2'
-				class='avia-section main_color avia-section-huge avia-no-border-styling avia-bg-style-scroll  avia-builder-el-7  el_after_av_section  el_before_av_image_hotspot   container_wrap fullsize'>
-				<div class='container container-wrapper'>
-					<div class='template-page content  av-content-full alpha units'>
-						<div class='post-entry post-entry-type-page post-entry-431'>
-							<div class='entry-content-wrapper clearfix'>
-								<div
-									class="flex_column av_one_fifth  flex_column_div first  avia-builder-el-8  el_before_av_three_fifth  avia-builder-el-first  ">
-								</div>
-								<div
-									class="flex_column av_three_fifth  flex_column_div   avia-builder-el-9  el_after_av_one_fifth  el_before_av_one_fifth  ">
-									<div style='padding-bottom:10px; font-size:40px;'
-										class='av-special-heading av-special-heading-h1  blockquote modern-quote modern-centered  avia-builder-el-10  avia-builder-el-no-sibling   av-thin-font av-inherit-size '>
-										<h1 class='av-special-heading-tag ' itemprop="headline">SEGMENTOS QUE A<strong
-												style="color: #444444;"> CHRONOSINFO</strong> ATENDE</h1>
-										<div class='special-heading-border'>
-											<div class='special-heading-inner-border'></div>
-										</div>
-									</div>
-								</div>
-								<div
-									class="flex_column av_one_fifth  flex_column_div   avia-builder-el-11  el_after_av_three_fifth  el_before_av_hr  ">
-								</div>
-								<div style=' margin-top:70px; margin-bottom:70px;'
-									class='hr hr-custom hr-center hr-icon-no   avia-builder-el-12  el_after_av_one_fifth  el_before_av_one_third '>
-									<span class='hr-inner   inner-border-av-border-fat'
-										style=' width:50px; border-color:#000000;'><span
-											class='hr-inner-style'></span></span></div>
+                <div class='container av-logo-container'>
+                    <div class='inner-container'><span class='logo'><a href='/'><img height='100' width='300'
+                                    src='wp-content/assets/images/logo.png' alt='chronosinfo'
+                                    title='' /></a></span>
+                        <nav class='main_menu' data-selectname='Selecione uma página' role="navigation"
+                            itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+                            <div id="mega-menu-wrap-avia" class="mega-menu-wrap">
+                                <div class="mega-menu-toggle">
+                                    <div class="mega-toggle-blocks-left"></div>
+                                    <div class="mega-toggle-blocks-center"></div>
+                                    <div class="mega-toggle-blocks-right">
+                                        <div class='mega-toggle-block mega-menu-toggle-block mega-toggle-block-1'
+                                            id='mega-toggle-block-1' tabindex='0'><span class='mega-toggle-label'
+                                                role='button' aria-expanded='false'><span
+                                                    class='mega-toggle-label-closed'></span><span
+                                                    class='mega-toggle-label-open'></span></span></div>
+                                    </div>
+                                </div>
+                                <ul id="mega-menu-avia" class="mega-menu max-mega-menu mega-menu-horizontal mega-no-js"
+                                    data-event="hover_intent" data-effect="fade" data-effect-speed="200"
+                                    data-effect-mobile="slide_left" data-effect-speed-mobile="200"
+                                    data-panel-width="body" data-mobile-force-width="false" data-second-click="go"
+                                    data-document-click="collapse" data-vertical-behaviour="standard"
+                                    data-breakpoint="967" data-unbind="true" data-hover-intent-timeout="300"
+                                    data-hover-intent-interval="100">
+                                    <li class='mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-home mega-current-menu-item mega-page_item mega-page-item-431 mega-current_page_item mega-align-bottom-left mega-menu-flyout mega-menu-item-658'
+                                        id='mega-menu-item-658'><a class="mega-menu-link" href="http://chronosinfo2/"
+                                            tabindex="0">Home</a></li>
+                                    <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-megamenu mega-hide-on-mobile mega-disable-link mega-menu-item-692'
+                                        id='mega-menu-item-692'><a class="mega-menu-link" tabindex="0"
+                                            aria-haspopup="true" aria-expanded="false"
+                                            role="button">Funcionabilidades<span class="mega-indicator"></span></a>
+                                        <ul class="mega-sub-menu">
+                                            <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-812'
+                                                id='mega-menu-item-812'><a class="mega-menu-link" href="#">Sistemas</a>
+                                            </li>
+                                            <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-813'
+                                                id='mega-menu-item-813'><a class="mega-menu-link" href="#">Empresas</a>
+                                            </li>
+                                            <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-814'
+                                                id='mega-menu-item-814'><a class="mega-menu-link" href="#">Gestão</a>
+                                            </li>
+                                            <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-815'
+                                                id='mega-menu-item-815'><a class="mega-menu-link" href="#">Sobre nós</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-hide-on-desktop mega-disable-link mega-menu-item-816'
+                                        id='mega-menu-item-816'><a class="mega-menu-link" tabindex="0"
+                                            aria-haspopup="true" aria-expanded="false"
+                                            role="button">Funcionabilidades<span class="mega-indicator"></span></a>
+                                        <ul class="mega-sub-menu">
+                                            <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-817'
+                                                id='mega-menu-item-817'><a class="mega-menu-link" href="#">Sistemas</a>
+                                            </li>
+                                            <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-818'
+                                                id='mega-menu-item-818'><a class="mega-menu-link" href="#">Empresas</a>
+                                            </li>
+                                            <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-819'
+                                                id='mega-menu-item-819'><a class="mega-menu-link" href="#">Gestão</a>
+                                            </li>
+                                            <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-820'
+                                                id='mega-menu-item-820'><a class="mega-menu-link" href="#">Sobre nós</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class='mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-align-bottom-left mega-menu-flyout mega-menu-item-693'
+                                        id='mega-menu-item-693'><a class="mega-menu-link" href="#"
+                                            tabindex="0">Soluções</a></li>
+                                    <li class="av-burger-menu-main menu-item-avia-special av-small-burger-icon">
+                                        <a href="#" aria-label="Menu" aria-hidden="false">
+                                            <span class="av-hamburger av-hamburger--spin av-js-hamburger">
+                                                <span class="av-hamburger-box">
+                                                    <span class="av-hamburger-inner"></span>
+                                                    <strong>Menu</strong>
+                                                </span>
+                                            </span>
+                                            <span class="avia_hidden_link_text">Menu</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- end container_wrap-->
+            </div>
+            <div id="avia_alternate_menu" style="display: none;">
+                <nav class='main_menu' data-selectname='Selecione uma página' role="navigation" itemscope="itemscope"
+                    itemtype="https://schema.org/SiteNavigationElement">
+                    <div class="avia_alternate_menu av-main-nav-wrap">
+                        <ul id="avia_alternate_menu" class="menu av-main-nav">
+                            <li id="menu-item-658"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-431 current_page_item menu-item-top-level menu-item-top-level-1">
+                                <a href="http://chronosinfo2/" itemprop="url"><span class="avia-bullet"></span><span
+                                        class="avia-menu-text">Home</span><span class="avia-menu-fx"><span
+                                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                            </li>
+                            <li id="menu-item-692"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-2">
+                                <a href="#" itemprop="url"><span class="avia-bullet"></span><span
+                                        class="avia-menu-text">Funcionabilidades</span><span class="avia-menu-fx"><span
+                                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
 
 
-							</div>
-
-							<!-- Services -->
-							<div class="services-list">
-								<!-- card-1 -->
-								<div class="elementor-column-wrap">
-									<div class="elementor-widget-wrap">
-										<div class="elementor-image">
-											<img width="128" height="128" src="wp-content/assets/images/shop_icon.png"
-												class="attachment-large size-large" alt=""> </div>
-										<div class="elementor-widget-container">
-											<h5 class="elementor-heading-title elementor-size-default">Sistemas para
-												Lojas</h5>
-										</div>
-										<div class="elementor-widget-container">
-											<div class="elementor-text-editor elementor-clearfix">We are committed to
-												follow the latest technological tendencies to deliver our clients
-												high-class products and services.</div>
-										</div>
-									</div>
-								</div>
-								<!-- card-2 -->
-								<div class="elementor-column-wrap column-wrap-2">
-									<div class="elementor-widget-wrap">
-										<div class="elementor-image">
-											<img width="128" height="128" src="wp-content/assets/images/cart_icon.png"
-												class="attachment-large size-large" alt=""> </div>
-										<div class="elementor-widget-container">
-											<h5 class="elementor-heading-title elementor-size-default">Sistemas para
-												Materiais de Construção</h5>
-										</div>
-										<div class="elementor-widget-container">
-											<div class="elementor-text-editor elementor-clearfix">We are committed to
-												follow the latest technological tendencies to deliver our clients
-												high-class products and services.</div>
-										</div>
-									</div>
-								</div>
-								<!-- card-3 -->
-								<div class="elementor-column-wrap">
-									<div class="elementor-widget-wrap">
-										<div class="elementor-image">
-											<img width="128" height="128"
-												src="wp-content/assets/images/checklist_icon.png"
-												class="attachment-large size-large" alt=""> </div>
-										<div class="elementor-widget-container">
-											<h5 class="elementor-heading-title elementor-size-default">Sistemas para
-												Prestadores de Serviços</h5>
-										</div>
-										<div class="elementor-widget-container">
-											<div class="elementor-text-editor elementor-clearfix">We are committed to
-												follow the latest technological tendencies to deliver our clients
-												high-class products and services.</div>
-										</div>
-									</div>
-								</div>
-								<!-- card-1 -->
-								<div class="elementor-column-wrap">
-									<div class="elementor-widget-wrap">
-										<div class="elementor-image">
-											<img width="128" height="128"
-												src="wp-content/assets/images/register_icon.png"
-												class="attachment-large size-large" alt=""> </div>
-										<div class="elementor-widget-container">
-											<h5 class="elementor-heading-title elementor-size-default">Sistemas para
-												Minimercados</h5>
-										</div>
-										<div class="elementor-widget-container">
-											<div class="elementor-text-editor elementor-clearfix">We are committed to
-												follow the latest technological tendencies to deliver our clients
-												high-class products and services.</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- card-2 -->
-								<div class="elementor-column-wrap column-wrap-2">
-									<div class="elementor-widget-wrap">
-										<div class="elementor-image">
-											<img width="128" height="128" src="wp-content/assets/images/tools_icon.png"
-												class="attachment-large size-large" alt=""> </div>
-										<div class="elementor-widget-container">
-											<h5 class="elementor-heading-title elementor-size-default">Sistemas para
-												Oficinas</h5>
-										</div>
-										<div class="elementor-widget-container">
-											<div class="elementor-text-editor elementor-clearfix">We are committed to
-												follow the latest technological tendencies to deliver our clients
-												high-class products and services.</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- card-3 -->
-								<div class="elementor-column-wrap">
-									<div class="elementor-widget-wrap">
-										<div class="elementor-image">
-											<img width="128" height="128"
-												src="wp-content/assets/images/toasted_icon.png"
-												class="attachment-large size-large" alt=""> </div>
-										<div class="elementor-widget-container">
-											<h5 class="elementor-heading-title elementor-size-default">Sistemas para
-												Padarias</h5>
-										</div>
-										<div class="elementor-widget-container">
-											<div class="elementor-text-editor elementor-clearfix">We are committed to
-												follow the latest technological tendencies to deliver our clients
-												high-class products and services.</div>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<!-- Services -->
-							<div class="services-list services-2">
+                                <ul class="sub-menu">
+                                    <li id="menu-item-812"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#"
+                                            itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Sistemas</span></a></li>
+                                    <li id="menu-item-813"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#"
+                                            itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Empresas</span></a></li>
+                                    <li id="menu-item-814"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#"
+                                            itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Gestão</span></a></li>
+                                    <li id="menu-item-815"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#"
+                                            itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Sobre nós</span></a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-816"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-top-level menu-item-top-level-3">
+                                <a href="#" itemprop="url"><span class="avia-bullet"></span><span
+                                        class="avia-menu-text">Funcionabilidades</span><span class="avia-menu-fx"><span
+                                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
 
 
+                                <ul class="sub-menu">
+                                    <li id="menu-item-817"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#"
+                                            itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Sistemas</span></a></li>
+                                    <li id="menu-item-818"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#"
+                                            itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Empresas</span></a></li>
+                                    <li id="menu-item-819"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#"
+                                            itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Gestão</span></a></li>
+                                    <li id="menu-item-820"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom"><a href="#"
+                                            itemprop="url"><span class="avia-bullet"></span><span
+                                                class="avia-menu-text">Sobre nós</span></a></li>
+                                </ul>
+                            </li>
+                            <li id="menu-item-693"
+                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-4">
+                                <a href="#" itemprop="url"><span class="avia-bullet"></span><span
+                                        class="avia-menu-text">Soluções</span><span class="avia-menu-fx"><span
+                                            class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class='header_bg'></div>
 
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <!-- end header -->
+        </header>
 
+        <div id='main' class='all_colors' data-scroll-offset='78'>
 
-		<div id="av_section_3" class='avia-section main_color avia-section-huge avia-no-border-styling avia-bg-style-scroll  avia-builder-el-7  el_after_av_section  el_before_av_image_hotspot   container_wrap fullsize'>
-			<div class='container container-wrapper'>
-			<div class="av_section_functions">
-				<div class="description">
-					<h2>Sistemas para Lojas</h2>
-					<p>Com a Chronosinfo, você gerencia a sua loja de forma simples e eficiente.
-						Cadastre seus produtos, realize vendas e emita notas fiscais de onde estiver.
-						São mais possibilidades para a sua loja e um atendimento mais ágil e personalizado
-						para seus clientes.</p>
-				</div>
-				<div class="image-details">
-					<img src="wp-content/assets/images/sistema.png" alt="" style="text-align: end;">
-				</div>
-			</div>
+            <div id='av_section_1'
+                class='avia-section main_color avia-section-default avia-no-border-styling  avia-full-stretch av-section-color-overlay-active avia-bg-style-scroll  avia-builder-el-0  el_before_av_section  avia-builder-el-first   av-minimum-height av-minimum-height-100  container_wrap fullsize'
+                style='background-repeat: no-repeat; background-image: url(wp-content/assets/images/pocket-watch-1637396_1920.png);background-attachment: scroll; background-position: center left;  '
+                data-section-bg-repeat='stretch' data-av_minimum_height_pc='100'>
+                <div class='av-section-color-overlay-wrap'>
+                    <div class='av-section-color-overlay' style='opacity: 0.8; background-color: #95a5a6; '></div><a
+                        href='/#next-section' title='' class='scroll-down-link ' aria-hidden='true' data-av_icon=''
+                        data-av_iconfont='entypo-fontello'></a>
+                    <div class='container'>
+                        <main role="main" itemprop="mainContentOfPage"
+                            class='template-page content  av-content-full alpha units'>
+                            <div class='post-entry post-entry-type-page post-entry-431'>
+                                <div class='entry-content-wrapper clearfix'>
+                                    <div
+                                        class="flex_column av_three_fourth  flex_column_div first  avia-builder-el-1  avia-builder-el-no-sibling  ">
+                                        <div style='text-align:left; color:#ffffff; font-size:52px; margin:0 0 0 0; '
+                                            class='av-rotator-container av-rotation-container-left   avia-builder-el-2  el_before_av_hr  avia-builder-el-first '
+                                            data-interval='3' data-animation='1'>
+                                            <h2
+                                                class='av-rotator-container-inner  av-medium-font-size-overwrite av-medium-font-size-46 av-mini-font-size-overwrite av-mini-font-size-36'>
+                                                TUDO SOBRE SISTEMAS! OFERECEMOS SOLUÇÕES<span
+                                                    class='av-rotator-text av-rotator-multiline-on '>
+                                                    <span style='color:#d35400; '
+                                                        class='av-rotator-text-single av-rotator-text-single-1'>SISTEMAS</span>
+                                                    <span style='color:#d35400; '
+                                                        class='av-rotator-text-single av-rotator-text-single-2'>E-COMMERCE</span>
+                                                    <span style='color:#d35400; '
+                                                        class='av-rotator-text-single av-rotator-text-single-3'>GESTÃO
+                                                        FINANCEIRA</span>
+                                                    <span style='color:#d35400; '
+                                                        class='av-rotator-text-single av-rotator-text-single-4'>SUPORTE
+                                                        24/7</span>
+                                                </span></h2>
+                                        </div>
+                                        <div style=' margin-top:40px; margin-bottom:40px;'
+                                            class='hr hr-custom hr-left hr-icon-no   avia-builder-el-3  el_after_av_headline_rotator  avia-builder-el-last '>
+                                            <span class='hr-inner  inner-border-av-border-fat'
+                                                style=' width:50px; border-color:#ffffff;'><span
+                                                    class='hr-inner-style'></span></span></div>
+                                    </div>
 
-			<div class="av_section_functions-reverse">
-				<div class="description-reverse">
-					<h2>Sistemas para Oficinas</h2>
-					<p>Com a Chronosinfo, você gerencia a sua loja de forma simples e eficiente.
-						Cadastre seus produtos, realize vendas e emita notas fiscais de onde estiver.
-						São mais possibilidades para a sua loja e um atendimento mais ágil e personalizado
-						para seus clientes.</p>
-				</div>
-				<div class="image-details">
-					<img src="wp-content/assets/images/sistema.png" alt="" style="text-align: end;">
-				</div>
-			</div>
+                                </div>
+                            </div>
+                        </main><!-- close content main element -->
+                    </div>
+                </div>
+            </div>
+            <div id='av_section_2'
+                class='avia-section main_color avia-section-default avia-no-border-styling  avia-bg-style-scroll  avia-builder-el-4  el_after_av_section  el_before_av_section   container_wrap fullsize'
+                >
+                <div class='container'>
+                    <div class='template-page content  av-content-full alpha units'>
+                        <div class='post-entry post-entry-type-page post-entry-431'>
+                            <div class='entry-content-wrapper clearfix'>
+                                <div
+                                    class="flex_column av_one_fifth  flex_column_div first  avia-builder-el-5  el_before_av_three_fifth  avia-builder-el-first  ">
+                                </div>
+                                <div
+                                    class="flex_column av_three_fifth  flex_column_div   avia-builder-el-6  el_after_av_one_fifth  el_before_av_one_fifth  ">
+                                    <div style='padding-bottom:10px; font-size:40px;'
+                                        class='av-special-heading av-special-heading-h1  blockquote modern-quote modern-centered  avia-builder-el-7  avia-builder-el-no-sibling  av-thin-font av-inherit-size '>
+                                        <h1 class='av-special-heading-tag  av-mini-font-size-overwrite av-mini-font-size-28'
+                                            itemprop="headline">Segmentos que a <strong>Chronosinfo</strong> atende</h1>
+                                        <div class='special-heading-border'>
+                                            <div class='special-heading-inner-border'></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex_column av_one_fifth  flex_column_div   avia-builder-el-8  el_after_av_three_fifth  el_before_av_hr  ">
+                                </div>
+                                <div style=' margin-top:70px; margin-bottom:70px;'
+                                    class='hr hr-custom hr-center hr-icon-no   avia-builder-el-9  el_after_av_one_fifth  el_before_av_one_third '>
+                                    <span class='hr-inner  inner-border-av-border-fat'
+                                        style=' width:50px; border-color:#000000;'><span
+                                            class='hr-inner-style'></span></span></div>
+                                <div class="flex_column av_one_third  flex_column_div first  avia-builder-el-10  el_after_av_hr  el_before_av_one_third  "
+                                    style='margin-top:100px; box-shadow: 0 0 10px 0 #d6d6d6; padding:0px 30px 70px 30px ; border-radius:10px; '>
+                                    <section class="av_textblock_section " itemscope="itemscope"
+                                        itemtype="https://schema.org/CreativeWork">
+                                        <div class='avia_textblock  ' itemprop="text">
+                                            <h3><img class="segmento_card_image aligncenter wp-image-747"
+                                                    src="wp-content/assets/images/shop_icon.png"
+                                                    alt="" width="120" height="120"
+                                                    srcset="wp-content/assets/images/shop_icon.png 128w, wp-content/assets/images/shop_icon-80x80.png 80w, wp-content/assets/images/shop_icon-36x36.png 36w"
+                                                    sizes="(max-width: 120px) 100vw, 120px" /></h3>
+                                            <h3 style="text-align: center;">Sistema para Lojas</h3>
+                                            <p>Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                                                massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                                nascetur ridiculus mus.</p>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="flex_column av_one_third  flex_column_div   avia-builder-el-12  el_after_av_one_third  el_before_av_one_third  "
+                                    style='margin-top:100px; box-shadow: 0 0 10px 0 #d6d6d6; padding:0px 30px 70px 30px ; border-radius:10px; '>
+                                    <section class="av_textblock_section " itemscope="itemscope"
+                                        itemtype="https://schema.org/CreativeWork">
+                                        <div class='avia_textblock  ' itemprop="text">
+                                            <h3><img class="segmento_card_image aligncenter wp-image-747"
+                                                    src="wp-content/assets/images/shop_icon.png"
+                                                    alt="" width="120" height="120"
+                                                    srcset="wp-content/assets/images/shop_icon.png 128w, wp-content/assets/images/shop_icon-80x80.png 80w, wp-content/assets/images/shop_icon-36x36.png 36w"
+                                                    sizes="(max-width: 120px) 100vw, 120px" /></h3>
+                                            <h3 style="text-align: center;">Sistema para Lojas</h3>
+                                            <p>Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                                                massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                                nascetur ridiculus mus.</p>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="flex_column av_one_third  flex_column_div   avia-builder-el-14  el_after_av_one_third  el_before_av_one_third  "
+                                    style='margin-top:100px; box-shadow: 0 0 10px 0 #d6d6d6; padding:0px 30px 70px 30px ; border-radius:10px; '>
+                                    <section class="av_textblock_section " itemscope="itemscope"
+                                        itemtype="https://schema.org/CreativeWork">
+                                        <div class='avia_textblock  ' itemprop="text">
+                                            <h3><img class="segmento_card_image aligncenter wp-image-747"
+                                                    src="wp-content/assets/images/shop_icon.png"
+                                                    alt="" width="120" height="120"
+                                                    srcset="wp-content/assets/images/shop_icon.png 128w, wp-content/assets/images/shop_icon-80x80.png 80w, wp-content/assets/images/shop_icon-36x36.png 36w"
+                                                    sizes="(max-width: 120px) 100vw, 120px" /></h3>
+                                            <h3 style="text-align: center;">Sistema para Lojas</h3>
+                                            <p>Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                                                massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                                nascetur ridiculus mus.</p>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="flex_column av_one_third  flex_column_div first  avia-builder-el-16  el_after_av_one_third  el_before_av_one_third  column-top-margin"
+                                    style='margin-top:100px; box-shadow: 0 0 10px 0 #d6d6d6; padding:0px 30px 70px 30px ; border-radius:10px; '>
+                                    <section class="av_textblock_section " itemscope="itemscope"
+                                        itemtype="https://schema.org/CreativeWork">
+                                        <div class='avia_textblock  ' itemprop="text">
+                                            <h3><img class="segmento_card_image aligncenter wp-image-747"
+                                                    src="wp-content/assets/images/shop_icon.png"
+                                                    alt="" width="120" height="120"
+                                                    srcset="wp-content/assets/images/shop_icon.png 128w, wp-content/assets/images/shop_icon-80x80.png 80w, wp-content/assets/images/shop_icon-36x36.png 36w"
+                                                    sizes="(max-width: 120px) 100vw, 120px" /></h3>
+                                            <h3 style="text-align: center;">Sistema para Lojas</h3>
+                                            <p>Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                                                massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                                nascetur ridiculus mus.</p>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="flex_column av_one_third  flex_column_div   avia-builder-el-18  el_after_av_one_third  el_before_av_one_third  column-top-margin"
+                                    style='margin-top:100px; box-shadow: 0 0 10px 0 #d6d6d6; padding:0px 30px 70px 30px ; border-radius:10px; '>
+                                    <section class="av_textblock_section " itemscope="itemscope"
+                                        itemtype="https://schema.org/CreativeWork">
+                                        <div class='avia_textblock  ' itemprop="text">
+                                            <h3><img class="segmento_card_image aligncenter wp-image-747"
+                                                    src="wp-content/assets/images/shop_icon.png"
+                                                    alt="" width="120" height="120"
+                                                    srcset="wp-content/assets/images/shop_icon.png 128w, wp-content/assets/images/shop_icon-80x80.png 80w, wp-content/assets/images/shop_icon-36x36.png 36w"
+                                                    sizes="(max-width: 120px) 100vw, 120px" /></h3>
+                                            <h3 style="text-align: center;">Sistema para Lojas</h3>
+                                            <p>Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                                                massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                                nascetur ridiculus mus.</p>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="flex_column av_one_third  flex_column_div   avia-builder-el-20  el_after_av_one_third  avia-builder-el-last  column-top-margin"
+                                    style='margin-top:100px; box-shadow: 0 0 10px 0 #d6d6d6; padding:0px 30px 70px 30px ; border-radius:10px; '>
+                                    <section class="av_textblock_section " itemscope="itemscope"
+                                        itemtype="https://schema.org/CreativeWork">
+                                        <div class='avia_textblock  ' itemprop="text">
+                                            <h3><img class="segmento_card_image aligncenter wp-image-747"
+                                                    src="wp-content/assets/images/shop_icon.png"
+                                                    alt="" width="120" height="120"
+                                                    srcset="wp-content/assets/images/shop_icon.png 128w, wp-content/assets/images/shop_icon-80x80.png 80w, wp-content/assets/images/shop_icon-36x36.png 36w"
+                                                    sizes="(max-width: 120px) 100vw, 120px" /></h3>
+                                            <h3 style="text-align: center;">Sistema para Lojas</h3>
+                                            <p>Consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                                                massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                                nascetur ridiculus mus.</p>
+                                        </div>
+                                    </section>
+                                </div>
 
-			<div class="av_section_functions">
-				<div class="description">
-					<h2>Sistemas para Minimercados</h2>
-					<p>Com a Chronosinfo, você gerencia a sua loja de forma simples e eficiente.
-						Cadastre seus produtos, realize vendas e emita notas fiscais de onde estiver.
-						São mais possibilidades para a sua loja e um atendimento mais ágil e personalizado
-						para seus clientes.</p>
-				</div>
-				<div class="image-details">
-					<img src="wp-content/assets/images/sistema.png" alt="" style="text-align: end;">
-				</div>
-			</div>
-		</div>
-		</div>
+                            </div>
+                        </div>
+                    </div><!-- close content main div -->
+                </div>
+            </div>
+            <div id='av_section_3'
+                class='avia-section main_color avia-section-huge avia-no-border-styling  avia-bg-style-scroll  avia-builder-el-22  el_after_av_section  avia-builder-el-last   av-arrow-down-section container_wrap fullsize'
+                >
+                <div class='container'>
+                    <div class='template-page content  av-content-full alpha units'>
+                        <div class='post-entry post-entry-type-page post-entry-431'>
+                            <div class='entry-content-wrapper clearfix'>
+                                <div
+                                    class="flex_column av_one_fifth  flex_column_div first  avia-builder-el-23  el_before_av_three_fifth  avia-builder-el-first  ">
+                                </div>
+                                <div
+                                    class="flex_column av_three_fifth  flex_column_div   avia-builder-el-24  el_after_av_one_fifth  el_before_av_one_fifth  ">
+                                    <div style='padding-bottom:10px; font-size:40px;'
+                                        class='av-special-heading av-special-heading-h1  blockquote modern-quote modern-centered  avia-builder-el-25  avia-builder-el-no-sibling  av-thin-font av-inherit-size '>
+                                        <h1 class='av-special-heading-tag  av-mini-font-size-overwrite av-mini-font-size-28'
+                                            itemprop="headline"><strong>Funcionalidades</strong> </h1>
+                                        <div class='special-heading-border'>
+                                            <div class='special-heading-inner-border'></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="flex_column av_one_fifth  flex_column_div   avia-builder-el-26  el_after_av_three_fifth  el_before_av_hr  ">
+                                </div>
+                                <div style=' margin-top:40px; margin-bottom:40px;'
+                                    class='hr hr-custom hr-center hr-icon-no   avia-builder-el-27  el_after_av_one_fifth  el_before_av_hr '>
+                                    <span class='hr-inner  inner-border-av-border-fat'
+                                        style=' width:50px; border-color:#000000;'><span
+                                            class='hr-inner-style'></span></span></div>
+                                <div style='height:50px'
+                                    class='hr hr-invisible   avia-builder-el-28  el_after_av_hr  el_before_av_one_half '>
+                                    <span class='hr-inner '><span class='hr-inner-style'></span></span></div>
+                                <div class="flex_column av_one_half  flex_column_div first  avia-builder-el-29  el_after_av_hr  el_before_av_one_half  "
+                                    style='margin-bottom:50px; padding:50px 30px 0px 0px ; border-radius:0px; '>
+                                    <section class="av_textblock_section " itemscope="itemscope"
+                                        itemtype="https://schema.org/CreativeWork">
+                                        <div class='avia_textblock  ' itemprop="text">
+                                            <h2>Sistemas para Lojas</h2>
+                                            <div class="description">
+                                                <p>Com a Chronosinfo, você gerencia a sua loja de forma simples e
+                                                    eficiente. Cadastre seus produtos, realize vendas e emita notas
+                                                    fiscais de onde estiver. São mais possibilidades para a sua loja e
+                                                    um atendimento mais ágil e personalizado para seus clientes.</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="flex_column av_one_half  flex_column_div av-zero-column-padding   avia-builder-el-31  el_after_av_one_half  el_before_av_hr  "
+                                    style='margin-bottom:50px; border-radius:0px; '>
+                                    <div class='avia-image-container  av-styling-    avia-builder-el-32  avia-builder-el-no-sibling  avia-align-center '
+                                        itemprop="image" itemscope="itemscope"
+                                        itemtype="https://schema.org/ImageObject">
+                                        <div class='avia-image-container-inner'>
+                                            <div class='avia-image-overlay-wrap'><img class='avia_image'
+                                                    src='wp-content/assets/images/sistema.png'
+                                                    alt='' title='sistema' height="632" width="1200"
+                                                    itemprop="thumbnailUrl" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style='height:50px'
+                                    class='hr hr-invisible   avia-builder-el-33  el_after_av_one_half  el_before_av_one_half '>
+                                    <span class='hr-inner '><span class='hr-inner-style'></span></span></div>
+                                <div class="flex_column av_one_half  flex_column_div av-zero-column-padding first  avia-builder-el-34  el_after_av_hr  el_before_av_one_half  "
+                                    style='border-radius:0px; '>
+                                    <div class='avia-image-container  av-styling-    avia-builder-el-35  avia-builder-el-no-sibling  avia-align-center '
+                                        itemprop="image" itemscope="itemscope"
+                                        itemtype="https://schema.org/ImageObject">
+                                        <div class='avia-image-container-inner'>
+                                            <div class='avia-image-overlay-wrap'><img class='avia_image'
+                                                    src='wp-content/assets/images/sistema.png'
+                                                    alt='' title='sistema' height="632" width="1200"
+                                                    itemprop="thumbnailUrl" /></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex_column av_one_half  flex_column_div   avia-builder-el-36  el_after_av_one_half  avia-builder-el-last  "
+                                    style='padding:50px 30px 0px 0px ; border-radius:0px; '>
+                                    <section class="av_textblock_section " itemscope="itemscope"
+                                        itemtype="https://schema.org/CreativeWork">
+                                        <div class='avia_textblock  ' itemprop="text">
+                                            <h2>Sistemas para Lojas</h2>
+                                            <div class="description">
+                                                <p>Com a Chronosinfo, você gerencia a sua loja de forma simples e
+                                                    eficiente. Cadastre seus produtos, realize vendas e emita notas
+                                                    fiscais de onde estiver. São mais possibilidades para a sua loja e
+                                                    um atendimento mais ágil e personalizado para seus clientes.</p>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
 
-			<div class='container_wrap footer_color' id='footer'>
+                            </div>
+                        </div>
+                    </div><!-- close content main div -->
+                    <!-- section close by builder template -->
+                </div>
+                <!--end builder template-->
+            </div><!-- close default .container_wrap element -->
+            <div class='container_wrap footer_color' id='footer'>
 
-				<div class='container container-footer'>
+                <div class='container'>
 
-					<div class='flex_column'>
-						<section id="text-4" class="widget clearfix widget_text" style="margin-right: 30px;">
-							<img src="wp-content/assets/images/logo.png" alt="" width="200px">
-							<span class="seperator extralight-border"></span>
-						</section>
-					</div>
+                    <div class='flex_column av_one_fourth  first el_before_av_one_fourth'>
+                        <section id="media_image-3" class="widget clearfix widget_media_image"><img width="300"
+                                height="100" src="wp-content/assets/images/logo.png"
+                                class="image wp-image-19  attachment-full size-full" alt=""
+                                style="max-width: 100%; height: auto;" /><span
+                                class="seperator extralight-border"></span></section>
+                    </div>
+                    <div class='flex_column av_one_fourth  el_after_av_one_fourth  el_before_av_one_fourth '>
+                        <section id="nav_menu-6" class="widget clearfix widget_nav_menu">
+                            <h3 class="widgettitle">Funcionalidades</h3>
+                            <div class="menu-footer-menu-container">
+                                <ul id="menu-footer-menu" class="menu">
+                                    <li id="menu-item-823"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-431 current_page_item menu-item-823">
+                                        <a href="http://chronosinfo2/" aria-current="page">Home</a></li>
+                                    <li id="menu-item-824"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-824"><a
+                                            href="#">Funcionabilidades</a></li>
+                                    <li id="menu-item-825"
+                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-825"><a
+                                            href="#">Soluções</a></li>
+                                </ul>
+                            </div><span class="seperator extralight-border"></span>
+                        </section>
+                    </div>
+                    <div class='flex_column av_one_fourth  el_after_av_one_fourth  el_before_av_one_fourth '>
+                        <section id="nav_menu-7" class="widget clearfix widget_nav_menu">
+                            <h3 class="widgettitle">Soluções</h3>
+                            <div class="menu-footer-menu-container">
+                                <ul id="menu-footer-menu-1" class="menu">
+                                    <li
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-431 current_page_item menu-item-823">
+                                        <a href="http://chronosinfo2/" aria-current="page">Home</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-824"><a
+                                            href="#">Funcionabilidades</a></li>
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-825"><a
+                                            href="#">Soluções</a></li>
+                                </ul>
+                            </div><span class="seperator extralight-border"></span>
+                        </section>
+                    </div>
+                    <div class='flex_column av_one_fourth  el_after_av_one_fourth  el_before_av_one_fourth '>
+                        <section id="text-2" class="widget clearfix widget_text">
+                            <h3 class="widgettitle">Redes Sociais</h3>
+                            <div class="textwidget">
+                                <p><img class="alignleft size-full wp-image-596"
+                                        src="wp-content/assets/images/instagram.png" alt=""
+                                        width="38" height="38" /><img class="alignleft size-full wp-image-598"
+                                        src="wp-content/assets/images/youtube.png" alt=""
+                                        width="38" height="38" /><img class="alignleft size-full wp-image-595"
+                                        src="wp-content/assets/images/facebook.png" alt=""
+                                        width="38" height="38" /><a href="http://#"><img
+                                            class="alignleft size-full wp-image-597"
+                                            src="wp-content/assets/images/linkedin.png" alt=""
+                                            width="38" height="38" /></a></p>
+                            </div>
+                            <span class="seperator extralight-border"></span>
+                        </section>
+                    </div>
+                </div>
 
-					<div class='flex_column    '>
-						<section id="pages-2" class="widget clearfix widget_pages">
-							<h3 class="widgettitle">Soluções</h3>
-							<ul class="menu-footer">
-								<li class="page_item page-item-14"><a href="#">Chronosinfo</a></li>
-								<li class="page_item page-item-14"><a href="#">Funcionabilidades</a></li>
-								<li class="page_item page-item-18"><a href="#">Soluções</a></li>
-							</ul>
-							<span class="seperator extralight-border"></span>
-						</section>
-					</div>
+                <!-- Whatsapp -->
 
-					<div class='flex_column    '>
-						<section id="pages-2" class="widget clearfix widget_pages">
-							<h3 class="widgettitle">Funcionabilidades</h3>
-							<ul class="menu-footer">
-								<li class="page_item page-item-14"><a href="#">Chronosinfo</a></li>
-								<li class="page_item page-item-14"><a href="#">Funcionabilidades</a></li>
-								<li class="page_item page-item-18"><a href="#">Soluções</a></li>
-							</ul>
-							<span class="seperator extralight-border"></span>
-						</section>
-					</div>
-
-					<div class='flex_column    '>
-						<section id="text-4" class="widget clearfix widget_text">
-							<h3 class="widgettitle">Redes Sociais</h3>
-							<span class="seperator extralight-border"></span>
-						</section>
-						<section id="avia_socialcount-3" class="widget ">
-							<ul class="social-list">
-								<li><a href="#"><img src="wp-content/assets/images/linkedin.png" width="25px"
-											alt=""></a></li>
-								<li><a href="#"><img src="wp-content/assets/images/facebook.png" width="25px"
-											alt=""></a></li>
-								<li><a href="#"><img src="wp-content/assets/images/youtube.png" width="25px" alt=""></a>
-								</li>
-								<li><a href="#"><img src="wp-content/assets/images/instagram.png" width="25px"
-											alt=""></a></li>
-							</ul>
-							<span class="seperator extralight-border"></span>
-						</section>
-					</div>
-
-				</div>
-
-				<div class="whatsapp social_bookmarks_whatsapp" style="">
+                <div class="whatsapp social_bookmarks_whatsapp">
 					<a href="https://api.whatsapp.com/send?phone=55###########" target="_blank">
 						<span>Whatsapp</span>
 					</a>
 				</div>
 
-			</div>
+                <!-- ####### END FOOTER CONTAINER ####### -->
+            </div>
 
-			<footer class='container_wrap socket_color' id='socket' role="contentinfo" itemscope="itemscope"
-				itemtype="https://schema.org/WPFooter">
-				<div class='container footer-copyright'>
-					<span class='copyright'>&copy; Copyright - <a href='index.html'>Chronosinfo</a></span>
-					<nav class='sub_menu_socket' role="navigation" itemscope="itemscope"
-						itemtype="https://schema.org/SiteNavigationElement">
-						<div class="avia3-menu">
-							<ul id="avia3-menu" class="menu">
-								<li id="menu-item-524"
-									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-1">
-									<a target="_blank" href="#" itemprop="url"><span class="avia-bullet"></span><span
-											class="avia-menu-text">
-											Política de Privacidade
-										</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span
-													class="avia-arrow"></span></span></span></a></li>
-								<li id="menu-item-525"
-									class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-2">
-									<a href="index.html#legal" itemprop="url"><span class="avia-bullet"></span><span
-											class="avia-menu-text">Informação legal</span><span
-											class="avia-menu-fx"><span class="avia-arrow-wrap"><span
-													class="avia-arrow"></span></span></span></a></li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-			</footer>
-		</div>
-	</div>
 
-	<a href='index.html#top' title='Scroll to top' id='scroll-top-link' aria-hidden='true' data-av_icon=''
-		data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Scroll to top</span></a>
 
-	<div id="fb-root"></div>
 
-	<script type='text/javascript'>
-		var mejsL10n = { "language": "en", "strings": { "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/", "mejs.fullscreen-off": "Turn off Fullscreen", "mejs.fullscreen-on": "Go Fullscreen", "mejs.download-video": "Download Video", "mejs.fullscreen": "Fullscreen", "mejs.time-jump-forward": ["Jump forward 1 second", "Jump forward %1 seconds"], "mejs.loop": "Toggle Loop", "mejs.play": "Play", "mejs.pause": "Pause", "mejs.close": "Close", "mejs.time-slider": "Time Slider", "mejs.time-help-text": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.", "mejs.time-skip-back": ["Skip back 1 second", "Skip back %1 seconds"], "mejs.captions-subtitles": "Captions\/Subtitles", "mejs.captions-chapters": "Chapters", "mejs.none": "None", "mejs.mute-toggle": "Mute Toggle", "mejs.volume-help-text": "Use Up\/Down Arrow keys to increase or decrease volume.", "mejs.unmute": "Unmute", "mejs.mute": "Mute", "mejs.volume-slider": "Volume Slider", "mejs.video-player": "Video Player", "mejs.audio-player": "Audio Player", "mejs.ad-skip": "Skip ad", "mejs.ad-skip-info": ["Skip in 1 second", "Skip in %1 seconds"], "mejs.source-chooser": "Source Chooser", "mejs.stop": "Stop", "mejs.speed-rate": "Speed Rate", "mejs.live-broadcast": "Live Broadcast", "mejs.afrikaans": "Afrikaans", "mejs.albanian": "Albanian", "mejs.arabic": "Arabic", "mejs.belarusian": "Belarusian", "mejs.bulgarian": "Bulgarian", "mejs.catalan": "Catalan", "mejs.chinese": "Chinese", "mejs.chinese-simplified": "Chinese (Simplified)", "mejs.chinese-traditional": "Chinese (Traditional)", "mejs.croatian": "Croatian", "mejs.czech": "Czech", "mejs.danish": "Danish", "mejs.dutch": "Dutch", "mejs.english": "English", "mejs.estonian": "Estonian", "mejs.filipino": "Filipino", "mejs.finnish": "Finnish", "mejs.french": "French", "mejs.galician": "Galician", "mejs.german": "German", "mejs.greek": "Greek", "mejs.haitian-creole": "Haitian Creole", "mejs.hebrew": "Hebrew", "mejs.hindi": "Hindi", "mejs.hungarian": "Hungarian", "mejs.icelandic": "Icelandic", "mejs.indonesian": "Indonesian", "mejs.irish": "Irish", "mejs.italian": "Italian", "mejs.japanese": "Japanese", "mejs.korean": "Korean", "mejs.latvian": "Latvian", "mejs.lithuanian": "Lithuanian", "mejs.macedonian": "Macedonian", "mejs.malay": "Malay", "mejs.maltese": "Maltese", "mejs.norwegian": "Norwegian", "mejs.persian": "Persian", "mejs.polish": "Polish", "mejs.portuguese": "Portuguese", "mejs.romanian": "Romanian", "mejs.russian": "Russian", "mejs.serbian": "Serbian", "mejs.slovak": "Slovak", "mejs.slovenian": "Slovenian", "mejs.spanish": "Spanish", "mejs.swahili": "Swahili", "mejs.swedish": "Swedish", "mejs.tagalog": "Tagalog", "mejs.thai": "Thai", "mejs.turkish": "Turkish", "mejs.ukrainian": "Ukrainian", "mejs.vietnamese": "Vietnamese", "mejs.welsh": "Welsh", "mejs.yiddish": "Yiddish" } };
-	</script>
-	<script type='text/javascript' src='wp-content/js/chronosinfo-footer-scripts.js'></script>
+            <footer class='container_wrap socket_color' id='socket' role="contentinfo" itemscope="itemscope"
+                itemtype="https://schema.org/WPFooter">
+                <div class='container'>
 
+                    <span class='copyright'>&copy; Copyright - <a href='/'>chronosinfo</a> - <a
+                            href='https://kriesi.at'>Enfold WordPress Theme by Kriesi</a></span>
+
+                    <nav class='sub_menu_socket' role="navigation" itemscope="itemscope"
+                        itemtype="https://schema.org/SiteNavigationElement">
+                        <div class="avia3-menu">
+                            <ul id="avia3-menu" class="menu">
+                                <li id="menu-item-823"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-431 current_page_item menu-item-top-level menu-item-top-level-1">
+                                    <a href="http://chronosinfo2/" itemprop="url"><span class="avia-bullet"></span><span
+                                            class="avia-menu-text">Home</span><span class="avia-menu-fx"><span
+                                                class="avia-arrow-wrap"><span
+                                                    class="avia-arrow"></span></span></span></a></li>
+                                <li id="menu-item-824"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-2">
+                                    <a href="#" itemprop="url"><span class="avia-bullet"></span><span
+                                            class="avia-menu-text">Funcionabilidades</span><span
+                                            class="avia-menu-fx"><span class="avia-arrow-wrap"><span
+                                                    class="avia-arrow"></span></span></span></a></li>
+                                <li id="menu-item-825"
+                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-3">
+                                    <a href="#" itemprop="url"><span class="avia-bullet"></span><span
+                                            class="avia-menu-text">Soluções</span><span class="avia-menu-fx"><span
+                                                class="avia-arrow-wrap"><span
+                                                    class="avia-arrow"></span></span></span></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+
+                <!-- ####### END SOCKET CONTAINER ####### -->
+            </footer>
+
+
+            <!-- end main -->
+        </div>
+
+        <!-- end wrap_all -->
+    </div>
+
+    <a href='/#top' title='Scroll to top' id='scroll-top-link' aria-hidden='true' data-av_icon=''
+        data-av_iconfont='entypo-fontello'><span class="avia_hidden_link_text">Scroll to top</span></a>
+
+    <div id="fb-root"></div>
+
+    <style type='text/css'>
+        @media only screen and (min-width: 768px) and (max-width: 989px) {
+            .responsive #top #wrap_all .av-medium-font-size-46 {
+                font-size: 46px !important;
+            }
+        }
+
+        @media only screen and (max-width: 479px) {
+            .responsive #top #wrap_all .av-mini-font-size-36 {
+                font-size: 36px !important;
+            }
+
+            .responsive #top #wrap_all .av-mini-font-size-28 {
+                font-size: 28px !important;
+            }
+        }
+    </style>
+
+    <script type='text/javascript' src='/wp-content/js/hoverIntent.min.js'></script>
+    <script type='text/javascript'>
+        /* <![CDATA[ */
+        var megamenu = { "timeout": "300", "interval": "100" };
+        /* ]]> */
+    </script>
+    <script type='text/javascript' src='/wp-content/js/maxmegamenu.js'></script>
+    <script type='text/javascript'
+        src='/wp-content/js/chronosinfo-footer-scripts.js'></script>
 </body>
 
 </html>

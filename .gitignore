@@ -1,3 +1,6 @@
 .*vscode/
 *copy.html
-/products
+*copy.css
+*plugins/
+*wp-includes/
+*imagesOLD/
