@@ -111,17 +111,17 @@
   }
   
   .widgettitle {
-    color: #404449!important;
+    color: #fff!important;
   }
   
   #menu-footer-column-1 li a {
-    color: #404449!important;
+    color: #fff!important;
   }
   #menu-footer-column-1 li a:hover {
     color: #d35400!important;
   }
   #menu-footer-column-2 li a {
-    color: #404449!important;
+    color: #fff!important;
   }
   #menu-footer-column-2 li a:hover {
     color: #d35400!important;
@@ -267,6 +267,7 @@
   .whatsapp {
     text-decoration: none;
     background-color:#25D366;
+    color: #fff;
     border-radius: 25px;
     position: fixed;
     bottom: 0.5vh;
