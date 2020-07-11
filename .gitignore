@@ -1,6 +1,7 @@
 .*vscode/
 *copy.html
 *copy.css
+*copy.js
 *plugins/
 *wp-includes/
 *imagesOLD/
