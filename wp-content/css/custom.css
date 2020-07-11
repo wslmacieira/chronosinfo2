@@ -267,13 +267,16 @@
   .whatsapp {
     text-decoration: none;
     background-color:#25D366;
-    color: #fff;
     border-radius: 25px;
     position: fixed;
-    bottom: 0.5vh;
-    right: 1%;
+    bottom: 2%;
+    right: 2%;
     padding: 10px;
     z-index: 10000000;
+  }
+  .whatsapp a {
+    text-decoration: none;
+    color: #fff!important;
   }
   .whatsapp a:hover {
     text-decoration: none;
