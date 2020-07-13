@@ -1,3 +1,6 @@
+/* Custom CSS */
+
+/* Footer */
 #footer {
 -webkit-box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.3);
 -moz-box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.3);
@@ -80,7 +83,7 @@ border-color: transparent;
 @media all and (max-width: 768px) {
   #footer .container .social-menu .widget,
   #footer .social-menu .widget {
-    border-top: 1px solid #404449;
+    border-top: 1px solid #fff;
     margin-top: 15px;
     padding-top: 28px;
   }
@@ -94,7 +97,7 @@ border-color: transparent;
   }
   #footer .container .flex_column.toggle-footer,
   #footer .flex_column.toggle-footer {
-    border-top: 1px solid #404449;
+    border-top: 1px solid #fff;
     margin-top: 15px !important;
     padding-top: 15px !important;
   }
@@ -160,6 +163,255 @@ border-color: transparent;
   }
 }
 
+/* Geral */
+.logo {
+  align-items: center!important;
+  display: flex!important;
+  flex-direction: row!important;
+  flex-wrap: wrap!important;
+  justify-content: center!important;
+  }
+  #header_main {
+    background-color: #54595F!important;
+    border-bottom: solid 2px #d35400!important;
+  }
+  .av-main-nav-wrap span {
+    font-size: 16px;
+  }
+  .av-main-nav-wrap span.menu-active {
+    color:#d35400!important;
+  }
+  #scroll-top-link {
+    background-color: #d35400!important;
+    border-color: #d35400!important;
+  }
+  #scroll-top-link:hover {
+    background-color: #444444!important;
+    border-color: #444444!important;
+  }
+  .av-image-hotspot_inner {
+    background-color: #d35400!important;
+  }
+  .widgettitle {
+    color: #fff!important;
+  }
+  
+  #menu-footer-column-1 li a {
+    color: #fff!important;
+  }
+  #menu-footer-column-1 li a:hover {
+    color: #d35400!important;
+  }
+  #menu-footer-column-2 li a {
+    color: #fff!important;
+  }
+  #menu-footer-column-2 li a:hover {
+    color: #d35400!important;
+  }
+  .services-list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 120px;
+  }
+  
+  @media (max-width: 900px) {
+  
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+  }
+  @media (max-width: 600px) {
+  
+    .services-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    
+  }
+  
+  .elementor-column-wrap {
+    margin-bottom: 40px;
+    text-align: center; 
+    background-color: #fdfdfd; 
+    box-shadow: 0px 0px 10px 3px #CECECE;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; 
+    min-height: 350px;
+    margin: 0px 10px 0px 10px;
+    padding: 0px 30px 50px 30px;
+    border-radius: 10px;
+  }
+  
+  .elementor-column-wrap:hover {
+    background-color: #fdfdfd; 
+    box-shadow: 0px 0px 10px 3px rgba(68, 68, 68, 0.4);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; 
+  }
+  
+  .elementor-heading-title {
+    color: #444!important;
+  }
+  .elementor-text-editor {
+    color: #ccc!important;
+  }
+  
+  .elementor-image  img{
+    margin-top: -64px;
+  border-style: solid;
+  border-width: 6px;
+  border-color: rgba(255, 255, 255, 0.58);
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.5);
+  }
+  
+  .elementor-widget-container {
+    padding: 15px 0px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .services-list {
+        flex-direction: column;
+    }
+    .services-2 {
+        margin-top: 0;
+    }
+  
+    .elementor-column-wrap {
+        margin-bottom: 100px;
+    }
+    .whatsapp span {
+       display: none;
+    }
+  
+    .whatsapp { 
+        width: 40px!important; 
+        height: 40px!important;
+        border-radius: 50%!important;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+  
+    .social_bookmarks_whatsapp a::before, .av-social-link-whatsapp a::before {
+  
+        margin-right: 0px!important;
+  
+    }
+  }
+  .whatsapp {
+    text-decoration: none;
+    background-color:#25D366;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    padding: 10px;
+    z-index: 10000000;
+  }
+  .whatsapp a {
+    text-decoration: none;
+    color: #fff!important;
+  }
+  .whatsapp a:hover {
+    text-decoration: none;
+    color: #d35400!important;
+  }
+  #scroll-top-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80%;
+    border-radius: 50%!important;
+    font-size: 28px;
+  }
+  .social_bookmarks_whatsapp a::before, .av-social-link-whatsapp a::before {
+    font-family: 'entypo-fontello';
+    content:"\e854";
+    font-size: 16px;
+    margin-right: 10px;
+    }
+    .socket_color {
+        background-color: #404449!important;
+    }
+    .av_section_functions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 10px; 
+    }
+  
+    .av_section_functions div h2 {
+        color: #d35400; margin: 40px 0;
+    }
+  
+    .av_section_functions p {
+        color: #95a5a6;
+    }
+  
+    .av_section_functions-reverse {
+        display: flex;
+        padding: 50px 10px; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+    
+    .av_section_functions-reverse div h2 {
+        color: #d35400; margin: 40px 0;
+        flex-direction: row-reverse;
+    }
+  
+    .av_section_functions-reverse p {
+        color: #95a5a6;
+    }
+  
+    .description {
+        width: 90%; padding-right: 50px;
+    }
+  
+    .description-reverse {
+        width: 90%; padding-left: 50px;
+    }
+  
+  
+    @media (min-width: 320px) and (max-width: 967px) {
+        .description {
+            width: 100%;
+            padding-right: 0;
+        }
+        .description-reverse {
+            width: 100%;
+            padding-left: 0;
+        }
+  
+        .av_section_functions {
+            flex-direction: column-reverse;
+        }
+        .av_section_functions-reverse {
+            flex-direction: column-reverse;
+        }
+  
+    }
+    @media (min-width: 320px) and (max-width: 480px) {
+        .whatsapp {
+            bottom: 3vh;
+            right: 3vh;
+        }
+        .responsive #top #wrap_all .container-wrapper {
+            width: 100%!important;
+            max-width: 100%!important;
+            margin: 0 auto;
+        }
+  
+        .av-rotator-container-inner  {
+            font-size: 36px!important;
+        }
+    }
+
+/* Bootstrap */
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -918,3 +1170,4 @@ border-color: transparent;
     margin-left: 0;
   }
 }
+

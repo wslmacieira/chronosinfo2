@@ -1,10 +1,3 @@
-
-/* Custom CSS */
-
-#header_main {
-  padding: 7px 0;
-}
-
 .logo {
   align-items: center!important;
   display: flex!important;
@@ -12,104 +5,27 @@
   flex-wrap: wrap!important;
   justify-content: center!important;
   }
-
-  .logo img {
-    width: 200px!important;
-  }
-
-  body {
-    font-family: 'Open Sans', sans-serif!important;
-    
-  }
-  
-  #av_section_2 {
-    background-color: #f2f3f3;
-  }
-  
   #header_main {
     background-color: #54595F!important;
     border-bottom: solid 2px #d35400!important;
   }
-  
-  .header_bg {
-    background-color: #54595F!important;
-  }
-  
   .av-main-nav-wrap span {
     font-size: 16px;
-    color: #95a5a6!important;
   }
   .av-main-nav-wrap span.menu-active {
     color:#d35400!important;
   }
-  
-  
-  .avia-menu-text:hover {
-    color:#d35400!important;
-  }
-  
-  .av-burger-overlay-inner {
-    background-color:  #54595F!important;
-  }
-  
-  #wrap_all .av-burger-overlay #av-burger-menu-ul li a {
-    border-color: #d35400!important;
-  }
-  
-  .av-hamburger {
-    background-color: #54595F!important;
-    border-color: #54595F!important;
-  }
-  
-  #learn-more a {
-    background-color: #95a5a6!important;
-  }
-  
-  .avia_iconbox_title {
-    color: #ffffff;
-  }
-  
-  .av-rotator-container-inner span {
-    color: #d35400!important;
-  }
-  
-  .main_color input[type='submit'] {
-    background-color: #95A5A6!important;
-  }
-  .main_color input[type='submit']:hover {
-    background-color: #444444!important;
-  }
-  
-  .av-special-heading-tag {
-    color: #d35400!important;
-  }
-  
-  .hr-inner {
-    border-color: #d35400!important;
-  }
-  
   #scroll-top-link {
     background-color: #d35400!important;
     border-color: #d35400!important;
   }
-  
   #scroll-top-link:hover {
     background-color: #444444!important;
     border-color: #444444!important;
   }
-  
-  .inner_tooltip strong {
-    color: #d35400!important;
-  }
-  
   .av-image-hotspot_inner {
     background-color: #d35400!important;
   }
-  
-  .main_color a {
-    color: #d35400!important;
-  }
-  
   .widgettitle {
     color: #fff!important;
   }
@@ -126,27 +42,6 @@
   #menu-footer-column-2 li a:hover {
     color: #d35400!important;
   }
-  
-  #avia_socialcount-3 {
-    margin-left: 10px!important;
-  }
-  
-  #text-4 h3 {
-    margin-left: 20px;
-  }
-  
-  .social-list {
-    display: flex;
-  }
-  
-  .social-list ul {
-    margin-left: -10px;
-  }
-  
-  .social-list img {
-    margin-left: 10px;
-  }
-  
   .services-list {
     margin-top: 50px;
     display: grid;
@@ -211,12 +106,6 @@
   }
   
   @media (min-width: 320px) and (max-width: 480px) {
-    .footer-copyright{
-        background-color: #404449!important;
-        box-shadow: 0px -3px 10px 0px rgba(0,0,0,0);
-        padding-right: 0px!important;  
-    }
-  
     .services-list {
         flex-direction: column;
     }
@@ -227,23 +116,6 @@
     .elementor-column-wrap {
         margin-bottom: 100px;
     }
-  
-    input[type='submit'] {
-        width: 100%;
-    }
-  
-    #avia_socialcount-3 {
-        margin-left: 0!important;
-    }
-    
-    #text-4 h3 {
-        margin-left: 0px;
-    }
-    
-    .social-list li:first-child {
-        margin-left: -10px;
-    }
-  
     .whatsapp span {
        display: none;
     }
@@ -261,9 +133,8 @@
   
         margin-right: 0px!important;
   
-        }
+    }
   }
-  
   .whatsapp {
     text-decoration: none;
     background-color:#25D366;
@@ -282,7 +153,6 @@
     text-decoration: none;
     color: #d35400!important;
   }
-  
   #scroll-top-link{
     display: flex;
     justify-content: center;
@@ -291,27 +161,15 @@
     border-radius: 50%!important;
     font-size: 28px;
   }
-  
   .social_bookmarks_whatsapp a::before, .av-social-link-whatsapp a::before {
     font-family: 'entypo-fontello';
     content:"\e854";
     font-size: 16px;
     margin-right: 10px;
     }
-  
-    #footer {
-        z-index: initial!important;
-    }
-  
-    .footer-copyright{
-        padding-right: 150px!important;  
-    }
-  
     .socket_color {
         background-color: #404449!important;
     }
-  
-  
     .av_section_functions {
         display: flex;
         justify-content: center;
@@ -371,27 +229,11 @@
         }
   
     }
-  
-    .container-footer {
-        display: grid;
-        grid-template-columns: 1.5fr 1fr 1fr 1fr;
-    }
-  
     @media (min-width: 320px) and (max-width: 480px) {
         .whatsapp {
             bottom: 3vh;
             right: 3vh;
         }
-  
-        .container-footer {
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-  
-        .footer-copyright{
-            padding-right: 0px!important;  
-        }
-  
         .responsive #top #wrap_all .container-wrapper {
             width: 100%!important;
             max-width: 100%!important;
@@ -403,6 +245,3 @@
         }
     }
   
-    .footer-section {
-      padding-top: 30px;
-    }
