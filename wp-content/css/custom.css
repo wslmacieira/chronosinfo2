@@ -6,6 +6,9 @@
   justify-content: center!important;
   }
   #header_main {
+    position: fixed!important;
+    left: 0;
+    right: 0;
     background-color: #54595F!important;
     border-bottom: solid 2px #d35400!important;
   }
