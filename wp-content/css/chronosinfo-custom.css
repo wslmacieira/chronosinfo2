@@ -412,7 +412,15 @@ border-color: transparent;
         .av-rotator-container-inner  {
             font-size: 24px!important;
         }
+
+        
     }
+
+    .avia-section .template-page .entry-content-wrapper {
+      padding-right: 0;
+      padding-top: 50px;
+  }
+
 
 /* Bootstrap */
 .container {
