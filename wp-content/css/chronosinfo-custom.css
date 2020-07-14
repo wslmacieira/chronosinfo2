@@ -408,9 +408,11 @@ border-color: transparent;
   
         .av_section_functions {
             flex-direction: column-reverse;
+            padding-bottom: 0;
         }
         .av_section_functions-reverse {
             flex-direction: column-reverse;
+            padding-bottom: 0;
         }
   
     }
