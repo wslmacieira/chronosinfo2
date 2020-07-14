@@ -172,11 +172,8 @@ border-color: transparent;
   justify-content: center!important;
   }
   #header_main {
-    position: fixed!important;
-    left: 0;
-    right: 0;
-    background-color: #54595F!important;
     border-bottom: solid 2px #d35400!important;
+    margin-bottom: -3px;
   }
   .av-main-nav-wrap span {
     font-size: 16px;
@@ -223,6 +220,21 @@ border-color: transparent;
   }
   
   @media (max-width: 900px) {
+
+    #header_main {
+      position: fixed!important;
+      left: 0;
+      right: 0;
+      background-color: #54595F!important;
+      border-bottom: solid 2px #d35400!important;
+    }
+
+
+    #slider-categorias {
+      margin-top: -0px!important;
+      margin-left: -0px!important;
+      padding-bottom: 0px!important;
+  }
   
     .services-list {
         display: grid;
@@ -389,7 +401,7 @@ border-color: transparent;
       }
     .description p{
       font-size: 16px;
-        color: #fff;
+        color: #95a5a6;
     }
   
     .description-reverse {
