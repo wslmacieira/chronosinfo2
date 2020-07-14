@@ -198,6 +198,10 @@ border-color: transparent;
   .widgettitle {
     color: #fff!important;
   }
+
+  .av-special-heading-tag {
+    color: #d35400;
+  }
   
   #menu-footer-column-1 li a {
     color: #fff!important;
@@ -368,11 +372,23 @@ border-color: transparent;
     }
   
     .av_section_functions-reverse p {
-        color: #95a5a6;
+      font-size: 16PX;
+        color: #FFF;
+    }
+
+    .av-special-heading-tag {
+      color: #d35400!important;
     }
   
     .description {
         width: 90%; padding-right: 50px;
+    }
+    .description h2{
+      font-size: 28px;
+      }
+    .description p{
+      font-size: 16px;
+        color: #fff;
     }
   
     .description-reverse {
