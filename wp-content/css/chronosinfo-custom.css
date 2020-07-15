@@ -424,6 +424,15 @@ border-color: transparent;
     .description-reverse {
         width: 90%; padding-left: 50px;
     }
+
+    @media(max-width: 600px) {
+      .av_section_functions div h2 {
+        text-align: center;
+    }
+      .av_section_functions-reverse div h2 {
+        text-align: center;
+    }
+    }
   
   
     @media (min-width: 320px) and (max-width: 967px) {
@@ -437,11 +446,11 @@ border-color: transparent;
         }
   
         .av_section_functions {
-            flex-direction: column-reverse;
+            flex-direction: column;
             padding-bottom: 0;
         }
         .av_section_functions-reverse {
-            flex-direction: column-reverse;
+            flex-direction: column;
             padding-bottom: 0;
         }
         .av-special-heading-tag strong {
