@@ -464,6 +464,26 @@ border-color: transparent;
     }
 
     @media (min-width: 320px) and (max-width: 480px) {
+      .av_section_functions{
+        padding: 0 30px;
+      }
+      .av_section_functions h2{
+        text-align: center;
+      }
+      .av_section_functions p{
+        padding: 0 30px 20px 30px;
+        text-align: center;
+      }
+      .av_section_functions-reverse{
+        padding: 0 30px;
+      }
+      .av_section_functions-reverse h2{
+        text-align: center;
+      }
+      .av_section_functions-reverse p{
+        padding: 0 30px 20px 30px;
+        text-align: center;
+      }
         .whatsapp {
             bottom: 3vh;
             right: 3vh;
