@@ -456,11 +456,13 @@ border-color: transparent;
             flex-direction: column;
             padding-bottom: 0;
         }
-        .av-special-heading-tag strong {
+        .title-custom {
+          text-align: left;
           font-size: 24px;
         }
   
     }
+
     @media (min-width: 320px) and (max-width: 480px) {
         .whatsapp {
             bottom: 3vh;
