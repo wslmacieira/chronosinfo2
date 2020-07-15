@@ -426,9 +426,15 @@ border-color: transparent;
     }
 
     @media(max-width: 600px) {
-      .av_section_functions-reverse div h2 {
-        text-align: center;
-    }
+      .section-custom {
+        padding-top: 0!important;
+      }
+      .av_section_functions {
+        padding-top: 0!important;
+      }
+      .hr-custom {
+        margin: 20px 0!important;
+      }
     }
   
   
