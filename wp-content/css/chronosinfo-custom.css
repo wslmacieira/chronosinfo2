@@ -163,6 +163,10 @@ border-color: transparent;
   }
 }
 
+
+
+
+
 /* Geral */
 .logo {
   align-items: center!important;
@@ -218,10 +222,23 @@ border-color: transparent;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 120px;
   }
+
+  @media (min-width: 500px) and (max-width: 900px) {
+    .av_textblock_section  {
+      text-align: center!important;
+    }
+    .alignleft {
+      width: 60%!important;
+      display: initial!important;
+      float: none!important;
+    }
+    .slide-entry-excerpt {
+      text-align: center!important;
+    }
+  }
   
   @media (max-width: 900px) {
-
-    #header_main {
+#header_main {
       position: fixed!important;
       left: 0;
       right: 0;
