@@ -182,6 +182,7 @@ border-color: transparent;
   }
   #header_main {
     border-bottom: solid 2px #d35400!important;
+    background-color: #fdfdfd;
     /* margin-bottom: -3px; */
   }
   .av-main-nav-wrap span {
