@@ -163,9 +163,87 @@ border-color: transparent;
   }
 }
 
+.slider {
+  max-width: 400px;
+  height: 350px;
+  margin: 20px 30px 20px 0px;
+  position: relative;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .slider {
+    height: 150px;
+    margin: 20px;
+  }
+  
+}
+.slide1,.slide2,.slide3,.slide4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url('../assets/images/notebook-1.png')no-repeat;
+      background-size: contain;
+    animation:fade 8s infinite;
+-webkit-animation:fade 8s infinite;
 
+} 
+.slide2 {
+  background: url('../assets/images/ecommerce.png')no-repeat;
+      background-size: contain;
+    animation:fade2 8s infinite;
+-webkit-animation:fade2 8s infinite;
+}
+.slide3 {
+    background: url('../assets/images/gestao.png')no-repeat;
+      background-size: contain;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+.slide4 {
+    background: url('../assets/images/suporte.png')no-repeat center;
+      background-size: contain;
+    animation:fade3 8s infinite;
+-webkit-animation:fade3 8s infinite;
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
 
-
+@keyframes fadeInBottom {
+  0% {
+    -webkit-transform: translate3d(0, 400px, 0);
+    transform: translate3d(0, 400px, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
 
 /* Geral */
 .logo  a{
