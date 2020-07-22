@@ -246,22 +246,43 @@ border-color: transparent;
 }
 
 /* Geral */
+
+.n2-ss-slider h2.n2-ow {
+  font-size: 225%!important;
+}
+.n2-ss-slider h3.n2-ow {
+  font-size: 200%!important;
+}
+
 .logo  a{
   display:flex;
   justify-content:center;
   align-items:center;
   }
   @media (min-width: 320px) and (max-width: 480px) {
+    .logo  img{
+      width: 70%!important;
+      }
+    
+  }
+  @media (min-width: 320px) and (max-width: 902px) {
+    .n2-ss-slider h2.n2-ow {
+      font-size: 150%!important;
+      padding-top: 100px;
+    }
+    .n2-ss-slider h3.n2-ow {
+      font-size: 200%!important;
+    }
   
     .logo  img{
       width: 70%!important;
       }
     
   }
+
   #header_main {
     border-bottom: solid 2px #d35400!important;
     background-color: #fdfdfd;
-    /* margin-bottom: -3px; */
   }
   .av-main-nav-wrap span {
     font-size: 16px;
@@ -326,8 +347,7 @@ border-color: transparent;
       position: fixed!important;
       left: 0;
       right: 0;
-      background-color: #54595F!important;
-      border-bottom: solid 2px #d35400!important;
+      background-color: #fdfdfd;
     }
 
 
