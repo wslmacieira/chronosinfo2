@@ -246,6 +246,14 @@ border-color: transparent;
 }
 
 /* Geral */
+#av_section_1{
+  margin-top: -80px;
+  height: calc(100vh -92px)!important;
+}
+
+.n2-ss-slider .n2-ss-layer-content {
+  min-height: calc(100vh - 92px);
+}
 
 .n2-ss-slider h2.n2-ow {
   font-size: 225%!important;
@@ -263,20 +271,37 @@ border-color: transparent;
     .logo  img{
       width: 70%!important;
       }
+      #av_section_1{
+        margin-top: -30px;
+      }
+      #n2-ss-2item5{
+        font-size: 80%!important;
+      }
+      #n2-ss-2item12{
+        font-size: 80%!important;
+      }
+      #n2-ss-2item19{
+        font-size: 80%!important;
+      }
+      #n2-ss-2item26{
+        font-size: 80%!important;
+      }
     
   }
   @media (min-width: 320px) and (max-width: 902px) {
+    #av_section_1{
+      margin-top: 0;
+    }
     .n2-ss-slider h2.n2-ow {
-      font-size: 150%!important;
+      font-size: 170%!important;
       padding-top: 100px;
     }
     .n2-ss-slider h3.n2-ow {
       font-size: 200%!important;
     }
-  
-    .logo  img{
-      width: 70%!important;
-      }
+    .n2-ow{
+      font-size: 100%!important;
+    }
     
   }
 
