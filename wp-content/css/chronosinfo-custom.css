@@ -1,5 +1,22 @@
 /* Custom CSS */
 
+/* #top #wrap_all .av-burger-overlay-scroll {
+  background-color: #94a5a6;
+} */
+
+/* #top #wrap_all #header #av-burger-menu-ul > li.av-active-burger-items {
+  height: 50px;
+} */
+
+ul#av-burger-menu-ul a {
+  height: 50px;
+}
+
+.html_av-submenu-hidden .av-submenu-indicator {
+  margin-top: 0;
+  line-height: 30px;
+}
+
 div.av-burger-overlay-bg {
   background-color:transparent;
 }
@@ -7,7 +24,10 @@ div.av-burger-overlay-bg {
 #top #av-burger-menu-ul {
   display: block;
   text-align: left;
-  padding: 0 30px!important;
+}
+#top #av-burger-menu-ul a{
+  text-decoration: none;
+  margin-left: 30px;
 }
 
 .av-burger-overlay-active #top #wrap_all .av-hamburger-inner {
