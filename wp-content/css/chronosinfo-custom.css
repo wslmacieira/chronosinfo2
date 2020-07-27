@@ -355,6 +355,9 @@ background-color: transparent!important;
       #n2-ss-2item26{
         font-size: 80%!important;
       }
+      .swipe-mobile-custom{
+        min-height: 700px!important;
+      }
     
   }
   @media (min-width: 320px) and (max-width: 902px) {
