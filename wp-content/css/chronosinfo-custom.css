@@ -1,5 +1,24 @@
 /* Custom CSS */
 
+div.av-burger-overlay-bg {
+  background-color:transparent;
+}
+
+#top #av-burger-menu-ul {
+  display: block;
+  text-align: left;
+  padding: 0 30px!important;
+}
+
+.av-burger-overlay-active #top #wrap_all .av-hamburger-inner {
+  background: #d35400;
+}
+
+.av-burger-overlay-active #top #wrap_all .av-hamburger-inner::before, 
+.av-burger-overlay-active #top #wrap_all .av-hamburger-inner::after {
+  background: #d35400;
+}
+
 /* Footer */
 #footer {
 -webkit-box-shadow: 0px -5px 10px 0px rgba(0,0,0,0.3);
