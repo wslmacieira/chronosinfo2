@@ -245,6 +245,72 @@ border-color: transparent;
   }
 }
 
+/* Menu Drawer */
+/* 
+.html_av-overlay-side #top #wrap_all .av-burger-overlay li a {
+  line-height: 1.3em;
+  height: auto;
+  padding: 20px 30px;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+}
+
+
+
+.av-burger-overlay-active #top #wrap_all .av-hamburger-inner{
+  background-color: #d35400;
+}
+.av-burger-overlay-active #top #wrap_all .av-hamburger-inner::after{
+  background-color: #d35400;
+}
+
+.av-burger-overlay-bg{
+background-color: transparent!important;
+}
+.av-burger-overlay-scroll{
+  height: auto;
+  overflow: hidden;
+  min-height: 0px;
+}
+#top #wrap_all .av-burger-overlay .av-burger-overlay-scroll #av-burger-menu-ul li a {
+  color: #94a5a6;
+  font-weight: bold;
+}
+.html_av-overlay-side-classic #top #wrap_all .av-burger-overlay #av-burger-menu-ul li a {
+  border-color: #94a5a6;
+}
+#top #wrap_all .av-burger-overlay-scroll {
+  background-color: #fdfdfd;
+}
+
+.av-burger-overlay{
+  margin-top: 92px;
+  height: 100%;
+}
+#top #av-burger-menu-ul {
+  display: block;
+  min-height: calc(100vh - 92px);
+}
+
+.html_av-overlay-side .av-burger-overlay-scroll {
+  width: 100%;
+  -webkit-transform: translateY(-425px);
+  transform: translateY(-425px);
+}
+
+.html_av-overlay-side.av-burger-overlay-active-delayed .av-burger-overlay-scroll {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+} */
+
+.n2-ss-slider.n2-ss-desktop .n2-ss-widget-display-desktop{
+  bottom: 70px!important;
+}
+.n2-ss-slider.n2-ss-mobile .n2-ss-widget-display-mobile{
+  bottom: 70px!important;
+}
+
 /* Geral */
 #av_section_1{
   margin-top: -80px;
@@ -268,6 +334,9 @@ border-color: transparent;
   align-items:center;
   }
   @media (min-width: 320px) and (max-width: 480px) {
+    .av-burger-overlay{
+      margin-top: 81px;
+    }
     .logo  img{
       width: 70%!important;
       }
@@ -294,7 +363,7 @@ border-color: transparent;
     }
     .n2-ss-slider h2.n2-ow {
       font-size: 170%!important;
-      padding-top: 100px;
+      padding-top: 50px;
     }
     .n2-ss-slider h3.n2-ow {
       font-size: 200%!important;
