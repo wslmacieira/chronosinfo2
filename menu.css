@@ -126,7 +126,7 @@ ul.dropdown2{
     .menu-logo {
     /* padding: 10px 0; */
     width: 180px;
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
     .menu-chronos {
     padding: 30px 15px;
@@ -189,9 +189,9 @@ ul.dropdown2{
         padding: 25px;
     }
     .fa-bars{
-        color: #fff;
+        color: #d35400;
         font-size: 26px;
-        border: 1px solid #fff;
+        /* border: 1px solid #fff; */
         padding: 5px 10px;
         border-radius: 4px;
     }
