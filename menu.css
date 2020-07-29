@@ -1,6 +1,10 @@
 *{
     margin: 0;
 }
+#header{
+position: fixed;
+height: 90px;
+}
 .menu-content ul{
     margin: 0;
     /* margin-right: 30px; */
@@ -10,7 +14,7 @@
     align-items: center;
     flex-basis: 650px;
     align-items: center;
-    background: #272727;
+    background: #54595f;
 }
 .menu-content ul li {
     height: 100%;
@@ -42,7 +46,8 @@
     height: 90px;
     display: flex;
     justify-content: flex-end;
-    background: #272727;
+    /* background: #272727; */
+    background: #54595f;
     border-bottom: 2px solid #d35400!important;
 }
 .dropdown{
@@ -89,6 +94,7 @@ ul.dropdown2{
 }
 .menu-header{
     display: none;
+    height: 90px;
 }
 .dropbtn i {
     display: none; 
@@ -118,7 +124,7 @@ ul.dropdown2{
         border-bottom: 2px solid #d35400!important;
     }
     .menu-logo {
-    padding: 10px 0;
+    /* padding: 10px 0; */
     width: 180px;
     margin-left: 15px;
 }
@@ -180,7 +186,7 @@ ul.dropdown2{
     .menu-header{
         background: #272727;
         text-align: right;
-        padding: 15px;
+        padding: 25px;
     }
     .fa-bars{
         color: #fff;
