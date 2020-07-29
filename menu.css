@@ -46,7 +46,7 @@ border-bottom: 2px solid #d35400;
 }
 .menu-content{
     padding: 0 30px;
-    height: 88px;
+    height: 88px!important;
     display: flex;
     justify-content: flex-end;
     /* background: #272727; */
