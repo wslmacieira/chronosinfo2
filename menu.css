@@ -156,11 +156,11 @@ ul.dropdown2{
     }
     .dropbtn.chevron-down i {
         transform: rotate(90deg);
-        transition: .3s;
+        transition: transform 0.3s ease-in-out;
     }
     .dropbtn2.chevron-down i {
         transform: rotate(90deg);
-        transition: .3s;
+        transition: transform 0.3s ease-in-out;
     }
     .dropdown li:hover .dropdown2{
     right: 0;

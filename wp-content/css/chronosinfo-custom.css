@@ -352,7 +352,7 @@ background-color: transparent!important;
 
 /* Geral */
 #av_section_1{
-  margin-top: -80px;
+  /* margin-top: -80px; */
   height: calc(100vh -92px)!important;
 }
 
