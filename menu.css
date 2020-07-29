@@ -37,7 +37,7 @@ height: 90px;
 .menu-content ul li a{
     color: #fff;
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     padding: 10px 0;
     display: block;
 }
