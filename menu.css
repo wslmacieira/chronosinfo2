@@ -4,6 +4,8 @@
 #header{
 position: fixed;
 height: 90px;
+background: #54595f;
+border-bottom: 2px solid #d35400;
 }
 .menu-content ul{
     margin: 0;
@@ -36,6 +38,7 @@ height: 90px;
 }
 .menu-content ul li a{
     color: #fff;
+    font-size: 16px;
     text-decoration: none;
     /* text-transform: uppercase; */
     padding: 10px 0;
@@ -43,12 +46,12 @@ height: 90px;
 }
 .menu-content{
     padding: 0 30px;
-    height: 90px;
+    height: 88px;
     display: flex;
     justify-content: flex-end;
     /* background: #272727; */
     background: #54595f;
-    border-bottom: 2px solid #d35400!important;
+    /* border-bottom: 2px solid #d35400!important; */
 }
 .dropdown{
     position: absolute;
@@ -112,7 +115,17 @@ ul.dropdown2{
      font-weight: bold;
  }
 
-@media(max-width: 902px){
+@media(max-width: 989px){
+    #header{
+        border-bottom: none;
+        }
+    .responsive #top #wrap_all .av-logo-container {
+        height: 90px;
+        line-height: initial!important;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
     .dropbtn i {
         display: block; 
      }
@@ -172,7 +185,7 @@ ul.dropdown2{
         padding: 0;
         padding-top: 30px;
         display: none;
-        border-bottom:none!important;
+        /* border-bottom:none!important; */
     }
     .menu-content ul{
         padding: 0 15px;
